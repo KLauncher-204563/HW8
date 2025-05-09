@@ -1,45 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/stule.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин техніки</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./stule.css">
 </head>
 <body>
-    <div class="holder">
-        <h1>Title</h1>
-        <ul class="list">
-          <li>
-            <a href="#">link1</a>
-            <ul>
-              <li>
-                <a href="#">link2</a>
-              </li>
-              <li>
-                <a href="#">link3</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/">link4</a>
-          </li>
-          <li>
-            <a href="https://validator.w3.org/">link5</a>
-          </li>
-          <li>
-            <a href="#">link6</a>
-          </li>
+  <!-- Навігація -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#products">Товари</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
         </ul>
-        <p>
+      </div>
+    </div>
+  </nav>
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, accusamus.
-        </p>
-        <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div> 
+  <!-- Головна секція -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Ласкаво просимо в TechStore</h1>
+      <p class="lead">Кращі гаджети та аксесуари для вас</p>
+    </div>
+  </header>
+
+  <!-- Товари -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Наші товари</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./img/photo_2025-05-09_11-15-07.jpg" class="card-img-top" alt="Ноутбук">
+            <div class="card-body">
+              <h5 class="card-title">Ноутбук HP</h5>
+              <p class="card-text">Потужний ноутбук для навчання та роботи.</p>
+              <a href="#" class="btn btn-primary">Додати в кошик</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./img/60b661d5-6e7f-45a8-9414-a187ef1e29f6.png" class="card-img-top" alt="Смартфон">
+            <div class="card-body">
+              <h5 class="card-title">Смартфон Samsung</h5>
+              <p class="card-text">Новітній смартфон з AMOLED дисплеєм.</p>
+              <a href="#" class="btn btn-primary">Додати в кошик</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./img/946361e7-1e04-4a76-ae90-36a832142983.png" class="card-img-top" alt="Навушники">
+            <div class="card-body">
+              <h5 class="card-title">Навушники Sony</h5>
+              <p class="card-text">Бездротові навушники з шумозаглушенням.</p>
+              <a href="#" class="btn btn-primary">Додати в кошик</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Про нас -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Про нас</h2>
+      <p class="text-center">Ми — команда ентузіастів, яка прагне забезпечити вас найкращою технікою для життя та роботи.</p>
+    </div>
+  </section>
+
+  <!-- Контакти -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Зв'яжіться з нами</h2>
+      <form class="w-50 mx-auto">
+        <div class="mb-3">
+          <label for="name" class="form-label">Ім'я</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Повідомлення</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Надіслати</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2025 TechStore. Всі права захищено.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
